@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center">
+            <ImageView
+                    android:id="@+id/moviePoster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+            />
+
+            <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Movie Title"
+                    android:textSize="30dp"
+            />
+
+            <TextView
+                    android:id="@+id/releaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Release date:"
+                    android:textSize="20dp"
+            />
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Rating:"
+                        android:layout_width="211dp"
+                        android:layout_height="wrap_content" android:id="@+id/voteText" android:textSize="18sp"/>
+                <TextView
+                        android:text="Popularity:"
+                        android:layout_width="213dp"
+                        android:layout_height="wrap_content" android:id="@+id/popularText" android:textSize="18sp"/>
+            </TableRow>
+            <TextView
+                    android:text="Overview:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/overviewText" android:textSize="18sp"/>
+            <Button
+                    android:text="Like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/like_button"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
